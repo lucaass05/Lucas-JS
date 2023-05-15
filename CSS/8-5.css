@@ -1,0 +1,38 @@
+.flex{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flexbox;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section h1{
+
+   display: flex;
+    justify-content: space-evenly;
+
+
+    
+}
+
+
+section h1:hover{
+    color: rgb(111, 116, 119);
+    font-size: 27px;
+}
+menu{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(134, 130, 130);
+    border: solid antiquewhite 1px;
+    border-radius: 5px;
+    
+}
+
+menu h2 a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+menu h2 a:hover{
+    color: aliceblue;
+    font-size: 26px;
+}
