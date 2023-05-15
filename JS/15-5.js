@@ -10,6 +10,8 @@ function verificar(params) {
     console.log(valor);
     console.dir(num1);
     console.log(num);
+    let r = num + 45;
+    console.log(r);
 }
 
 
