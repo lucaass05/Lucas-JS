@@ -121,7 +121,7 @@ if (numero % 2 === 0) {
 
   //Ej 7
 
-
+  
     var texto1 = prompt("Ej 7: Introduce un texto con o sin mayus:");
 
     if (texto1 === texto1.toUpperCase()) {
