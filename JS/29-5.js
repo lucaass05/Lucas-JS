@@ -121,21 +121,21 @@ if (numero % 2 === 0) {
 
   //Ej 7
 
-  function analizarCadena(cadena) {
-    if (cadena === cadena.toUpperCase()) {
+
+    var texto1 = prompt("Ej 7: Introduce un texto con o sin mayus:");
+
+    if (texto1 === texto1.toUpperCase()) {
       console.log("Ej 7: La cadena está formada solo por mayúsculas");
-    } else if (cadena === cadena.toLowerCase()) {
+    } else if (texto1 === texto1.toLowerCase()) {
       console.log("Ej 7: La cadena está formada solo por minúsculas");
     } else {
       console.log("Ej 7: La cadena es una mezcla de estas");
     }
-  }
-analizarCadena("PAPU"); 
-analizarCadena("papu"); 
-analizarCadena("Papu");
+
+
 
 // Ej 8
-function esPalindromo(cadena) {
+function Palindromo(cadena) {
     
     cadena = cadena.replace(/\s/g, "").toLowerCase();
     
@@ -150,7 +150,7 @@ function esPalindromo(cadena) {
   }
   
   var texto = prompt("Ej 8: Introduce un texto:");
-if (esPalindromo(texto)) {
+if (Palindromo(texto)) {
   console.log("Ej 8: La cadena es un palíndromo.");
 } else {
   console.log("Ej 8: La cadena no es un palíndromo.");
