@@ -1,49 +1,54 @@
 //ej1
 var meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
-document.write("Ej 1:" + meses);
+document.getElementById("resultado1").innerHTML= "Ej 1:" + meses;
 
 //ej2
 
-function array2(){
-var valores = [true, 5, false, "hola", "adios", 2];
-var aux =[];
-var posicion= 0;
-var valor ="";
+function Ejercicio2() {
+  var valores = [true, 5, false, "hola", "adios",2,"gjdjdflk"];
+  var posicion = 0;
+  var valor = "";
 
-for (let i= 0; i<valores.length; i++){
-    if (typeof(valores[i])=="string"){
-        aux.push(valores[i]);
+  for (let i = 0; i < valores.length; i++) {
+      if (typeof(valores[i]) == "string") {
+          if (aux[i].length > aux[i+1].length && i+1 < aux.length) {
+          posicion = i;
+          valor = aux[i];
+          }else {
+          posicion = i +1;
+          valor = aux[i + 1];
+          }
+      }
   }
- }
- for (let i=0; i<aux.length; i++){
-    if (aux[i].length > aux[i+1].length && i+1 < aux.length){
-        posicion = i;
-        valor = aux[i];
-    }
- else {
-    posicion = i + 1;
-    valor = aux[i + 1];
-        }
-    }
-    console.log("el mayor es " + valor);
-
-    if (valores[3].length > valores[4].length){
-        console.log("hola en mayor");
-    }else{
-        console.log("adios en mayor")
-    }
-
+  console.log("el mayor es "+valor);
+  //comparacion directa
+if (valores[3].length > valores[4].length) {
+  console.log("hola en mayor");
+}else{
+  console.log("adios en mayor")
+}
 }
 
-var valorTrue = valores[2] || valores[5];
-console.log("Ejercicio 2 (valoresTrue): " + valorTrue);
-var valorFalse = valores[2] && valores[5];
-console.log("Ej 2 (valoresFalse): " + valorFalse);
-console.log("Ej 2 (suma): " + (valores[2] + valores[5]) );
-console.log("Ej 2 (resta): " + (valores[2] - valores[5]) );
-console.log("Ej 2 (division): " + (valores[2] / valores[5]) );
-console.log("Ej 2 (multiplicacion): " + (valores[2] * valores[5]) );
-console.log("Ej 2 (modulo): " + (valores[2] % valores[5]) );
+function solicitudAJAX() {
+
+  var id = document.querySelector("#entrada").value;
+  var url = "https://pokeapi.co/api/v2/pokemon/"+id;
+
+  var objXMLHttpRequest = new XMLHttpRequest();
+
+  objXMLHttpRequest.onreadystatechange = function() {
+  if(objXMLHttpRequest.readyState === 4) {
+      if(objXMLHttpRequest.status === 200) {
+        console.log(objXMLHttpRequest.responseText);
+      }else {
+        alert('Error Code: ' +  objXMLHttpRequest.status);
+        alert('Error Message: ' + objXMLHttpRequest.statusText);
+      }
+  }
+}
+objXMLHttpRequest.open('GET', url);
+objXMLHttpRequest.send();
+}
 
 //ej3
 
@@ -87,28 +92,28 @@ if (numDNI < 0 || numDNI > 99999999) {
 
 //Ej 5
 
-var numero = prompt("Ej 5: Introduce un número entero para calcular su factorial:");
+var num = prompt("Ej 5: Introduce un número entero para calcular su factorial:");
 var factorial = 1;
 
 
-if (numero < 0) {
+if (num < 0) {
   console.log("Ej 5(numero no positivo): El número introducido no es positivo");
 } else {
   
-  for (var i = numero; i > 0; i--) {
+  for (var i = num; i > 0; i--) {
     factorial *= i;
   }
-  console.log("Ej 5(correcto): El factorial de " + numero + " es: " + factorial);
+  console.log("Ej 5(correcto): El factorial de " + num + " es: " + factorial);
 }
 
 
 //Ej 6
 function saberpares(){
 if (numero % 2 === 0) {
-    console.log("Ej 6(par): El número es par");
+    document.getElementById("resultado").innerHTML = "Ejercicio 6: El numero es par";
   } 
   else {
-    console.log ("Ej 6(inpar): El número es inpar.");
+    document.getElementById("resultado").innerHTML ="Ejercicio 6: El número es inpar.";
   }
 }
   var numero = prompt("Ej 6: Introduce un número entero:");
