@@ -132,7 +132,6 @@ if (numero % 2 === 0) {
       console.log("Ej 7: La cadena es una mezcla de estas");
     }
 
-<<<<<<< HEAD
 // Ej 8
 function esPalindromo(cadena) {
     
@@ -154,7 +153,3 @@ if (esPalindromo(texto)) {
 } else {
   console.log("Ej 8: La cadena no es un palíndromo.");
 }
-=======
-
-
->>>>>>> fd7e69716b13c7751e1993fe7b3c3f8798ec7d3c
