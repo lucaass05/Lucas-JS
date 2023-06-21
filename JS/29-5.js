@@ -69,25 +69,25 @@ console.log("Ej 3(cuarto if): Incrementar en 1 unidad el valor de numero1 no lo 
 
 //ej 4
 
-var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+function Ejercicio4(params) {
+    var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K',
+'E', 'T'];
 
-var numDNI = prompt("Ej 4: Introduce el número de DNI:");
-var letraDNI = prompt("Ej 4: Introduce la letra del DNI:");
+var dni = document.querySelector("#dni").value;
+var letraUsuario = document.querySelector("#letra").value;
+var letraUsuarioMayuscula = letraUsuario.toUpperCase();
 
+if (dni > 0 && dni < 99999999) {
+    var posicion = dni % 23;
+    if (letras[posicion] == letraUsuarioMayuscula) {
+        console.log("El número DNI y la letra son correctos");
+    }else {
+        console.log("La letra que ha indicado no es correcta");
+    }
+}else {
+    console.log("El número proporcionado no es válido");
+}
 
-if (numDNI < 0 || numDNI > 99999999) {
-  console.log("Ej 4(num no validado): El número de DNI proporcionado no es válido.");
-} else {
-  
-  var resto = numDNI % 23;
-  var letraCalculada = letras[resto];
-
-  
-  if (letraCalculada !== letraDNI.toUpperCase()) {
-    console.log("Ej 4 (letra no correcta):La letra indicada no es correcta.");
-  } else {
-    console.log("Ej 4 (todo correcto):El número y la letra de DNI son correctos.");
-  }
 }
 
 //Ej 5
@@ -132,5 +132,106 @@ if (numero % 2 === 0) {
       console.log("Ej 7: La cadena es una mezcla de estas");
     }
 
+// Ej 8
+function esPalindromo(cadena) {
+    
+    cadena = cadena.replace(/\s/g, "").toLowerCase();
+    
+    
+    for (var i = 0; i < cadena.length / 2; i++) {
+      if (cadena[i] !== cadena[cadena.length - 1 - i]) {
+        return false;
+      }
+    }
+    
+    return true;
+  }
+  
+  var texto = prompt("Ej 8: Introduce un texto:");
+if (esPalindromo(texto)) {
+  console.log("Ej 8: La cadena es un palíndromo.");
+} else {
+  console.log("Ej 8: La cadena no es un palíndromo.");
+}
+
+//ej 9
+function Persona(nombre, edad, genero) {
+    this.nombre = nombre;
+    this.edad = edad;
+    this.genero = genero;
+  }
+ 
+ 
+  Persona.prototype.obtDetalles = function() {
+    console.log("Nombre: " + this.nombre);
+    console.log("Edad: " + this.edad);
+    console.log("Género: " + this.genero);
+  };
+ 
+ 
+  function Estudiante(nombre, edad, genero, curso, grupo) {
+    Persona.call(this, nombre, edad, genero);
+    this.curso = curso;
+    this.grupo = grupo;
+  }
+ 
 
 
+  Estudiante.prototype = Object.create(Persona.prototype);
+  Estudiante.prototype.constructor = Estudiante;
+
+
+  Estudiante.prototype.registrar = function() {
+    console.log("Ej 9 (estudiante): El estudiante " + this.nombre + " ha sido registrado en el curso " + this.curso + " grupo " + this.grupo);
+  };
+ 
+ 
+  function Profesor(nombre, edad, genero, asignatura, nivel) {
+    Persona.call(this, nombre, edad, genero);
+    this.asignatura = asignatura;
+    this.nivel = nivel;
+  }
+ 
+
+
+  Profesor.prototype = Object.create(Persona.prototype);
+  Profesor.prototype.constructor = Profesor;
+ 
+ 
+  Profesor.prototype.asignar = function() {
+    console.log("Ej 9(Profe): El profesor " + this.nombre + " ha sido asignado a la asignatura de " + this.asignatura + " nivel " + this.nivel);
+  };
+ 
+ 
+  var persona = new Persona("Juan", 30, "Masculino");
+  persona.obtDetalles();
+ 
+  var estudiante = new Estudiante("Laura", 20, "Femenino", "4°15", "A");
+  estudiante.obtDetalles();
+  estudiante.registrar();
+ 
+  var profesor = new Profesor("Carlos", 40, "Masculino", "Matemáticas", "Avanzado");
+  profesor.obtDetalles();
+  profesor.asignar();
+
+   // Ej 10
+  function lanzamientoDados() {
+    var dado1 = Math.floor(Math.random() * 6) + 1;
+    var dado2 = Math.floor(Math.random() * 6) + 1;
+    return dado1 + dado2;
+  }
+ 
+ 
+  var apariciones = new Array(11).fill(0);
+
+
+  for (var i = 0; i < 36000; i++) {
+    var suma = lanzamientoDados();
+    apariciones[suma - 2]++;
+  }
+ 
+ 
+  for (var x = 0; x < apariciones.length; x++) {
+    var resultado = x + 2;
+    console.log("Ej 10: Suma " + resultado + ": " + apariciones[x] + " apariciones");
+  }
