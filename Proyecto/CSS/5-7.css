@@ -1,0 +1,18 @@
+menu{
+    display: flex;
+    justify-content: right;
+    border: solid rgb(0, 0, 0) 1px;
+    
+    
+    
+}
+
+menu p a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+menu p a:hover{
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
