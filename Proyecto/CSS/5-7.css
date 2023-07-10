@@ -4,27 +4,10 @@ menu{
 .container{
     display: flex;
     justify-content: right;
-    
-    
-    
-    
 }
 
-.container p a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
 
-.container p a:hover{
-    color: rgb(0, 0, 0);
-    font-size: 17px;
-}
-.topright {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-    font-size: 18px;
-  }
+
   
   
   ul {
