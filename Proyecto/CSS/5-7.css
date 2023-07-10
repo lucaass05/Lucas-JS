@@ -78,6 +78,7 @@ menu{
   }
   p.solido {
     border-style: solid;
+    background-color: rgb(255, 247, 237);
     border-radius: 12px;
   padding: 5px;
   width: 250px;
