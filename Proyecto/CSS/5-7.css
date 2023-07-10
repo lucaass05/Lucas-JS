@@ -76,3 +76,13 @@ menu{
       font-size: 18px;
     
   }
+  p.solido {
+    border-style: solid;
+    border-radius: 12px;
+  padding: 5px;
+  width: 250px;
+  height: 350px;
+  position: absolute;
+  top: 20%;
+  
+  }
