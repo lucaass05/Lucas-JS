@@ -76,24 +76,210 @@ menu{
       font-size: 18px;
     
   }
-  p.solidoL {
+  .belen {
     border-style: solid;
-    border-color: rgb(255, 247, 237);
-    background-color: rgb(255, 247, 237);
+    border-color: rgb(255, 227, 194);
+    background-color: rgb(255, 227, 194);
     border-radius: 12px;
-  padding: 5px;
-  width: 250px;
-  height: 350px;
-  position: absolute;
-  top: 20%;
-  text-align: center;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+
   
   }
-  p.aver{
+  p.precioL{
     padding: 5px;
   width: 250px;
   height: 350px;
   position: absolute;
-  top: 68%;
+  top: 89%;
   text-align: center;
+  font-size: 13px;
   }
+  .tomate {
+    border-style: solid;
+    border-color: rgb(255, 227, 194);
+    background-color: rgb(255, 227, 194);
+    border-radius: 12px;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    text-align: center;
+  }
+  
+  .morron {
+    border-style: solid;
+    border-color: rgb(255, 227, 194);
+    background-color: rgb(255, 227, 194);
+    border-radius: 12px;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    text-align: center;
+  }
+  .cebolla {
+    border-style: solid;
+    border-color: rgb(255, 227, 194);
+    background-color: rgb(255, 227, 194);
+    border-radius: 12px;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    text-align: center;
+  }
+  .champiñon{
+    border-style: solid;
+    border-color: rgb(255, 227, 194);
+    background-color: rgb(255, 227, 194);
+    border-radius: 12px;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 20%;
+    left: 120%;
+    text-align: center;
+  }
+  .zanahoria{
+    border-style: solid;
+    border-color: rgb(255, 227, 194);
+    background-color: rgb(255, 227, 194);
+    border-radius: 12px;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 90%;
+    text-align: center;
+  }
+  .brocoli{
+    border-style: solid;
+    border-color: rgb(255, 227, 194);
+    background-color: rgb(255, 227, 194);
+    border-radius: 12px;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    text-align: center;
+  }
+  .papa{
+    border-style: solid;
+    border-color: rgb(255, 227, 194);
+    background-color: rgb(255, 227, 194);
+    border-radius: 12px;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 90%;
+    left: 60%;
+    text-align: center;
+  }
+  .remolacha{
+    border-style: solid;
+    border-color: rgb(255, 227, 194);
+    background-color: rgb(255, 227, 194);
+    border-radius: 12px;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    text-align: center;
+  }
+  .coliflor{
+    border-style: solid;
+    border-color: rgb(255, 227, 194);
+    background-color: rgb(255, 227, 194);
+    border-radius: 12px;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 90%;
+    left: 120%;
+    text-align: center;
+  }
+  .zapallo{
+    border-style: solid;
+    border-color: rgb(255, 227, 194);
+    background-color: rgb(255, 227, 194);
+    border-radius: 12px;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 160%;
+    text-align: center;
+  }
+  .berenjena{
+    border-style: solid;
+    border-color: rgb(255, 227, 194);
+    background-color: rgb(255, 227, 194);
+    border-radius: 12px;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 160%;
+    left: 30%;
+    text-align: center;
+  }
+  .puerro{
+    border-style: solid;
+    border-color: rgb(255, 227, 194);
+    background-color: rgb(255, 227, 194);
+    border-radius: 12px;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 160%;
+    left: 60%;
+    text-align: center;
+  }
+  .acelga{
+    border-style: solid;
+    border-color: rgb(255, 227, 194);
+    background-color: rgb(255, 227, 194);
+    border-radius: 12px;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 160%;
+    left: 90%;
+    text-align: center;
+  }
+  .verdeo{
+    border-style: solid;
+    border-color: rgb(255, 227, 194);
+    background-color: rgb(255, 227, 194);
+    border-radius: 12px;
+    padding: 5px;
+    width: 250px;
+    height: 350px;
+    position: absolute;
+    top: 160%;
+    left: 120%;
+    text-align: center;
+  }
+  
+  
+  
