@@ -280,6 +280,23 @@ menu{
     left: 120%;
     text-align: center;
   }
+  .imgg{
+    width: 250px;
+    position: absolute; 
+    top: 30%;
+  }
+  .abajo{
+    position: absolute;
+      top: 220%;
+      width: 100%;
+      text-align: center;
+      font-size: 15px;
+      
+  }
+  .a{
+    text-decoration: none;
+    color: black;
+  }
   
   
   
